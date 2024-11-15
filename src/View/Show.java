@@ -3,7 +3,7 @@ package View;
 import Controller.Controller;
 import Model.*;
 
-public class ShowJadwal {
+public class Show {
 
     public static void main(String[] args) {
         
@@ -15,7 +15,10 @@ public class ShowJadwal {
         
         TicketType ticketType = TicketType.VIP; 
         double payment = Controller.calculatePayment(organize.artis, ticketType);
+        //payment berdasarkan tipe artis dan band
+        System.out.println("calculate payment buat artis , PAYMENT : " + payment);
+        
 
-        System.out.println("calculate payment buat artis " + payment);
+        
     }
 }

@@ -2,6 +2,8 @@ package View;
 
 public class MainMenu {
     public MainMenu() {
-       new ShowJadwal();
+       new Show();
+       new generateRevRep();
     }
+
 }

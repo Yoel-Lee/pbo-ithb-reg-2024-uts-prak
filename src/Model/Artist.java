@@ -2,10 +2,11 @@ package Model;
 
 public abstract class Artist {
     String name;
-    Genre genre;
-    double performanceFee;
-    TipeArtis tipeArtis;
+    public Genre genre;
+    public double performanceFee;
+    public TipeArtis tipeArtis;
     PerfomanceSchedule performanceSchedule;
+    public double perfomanceFee;
 
     public Artist(String name, Genre genre, double performanceFee, TipeArtis tipeArtis, PerfomanceSchedule performanceSchedule) {
         this.name = name;
