@@ -8,12 +8,14 @@ public class generateRevRep {
 
     public static void main(String[] args) {
         int totalRevenue = 0;
-        Organize organize = new Organize();  
+    
+        Organize organize = DummySetter.createDummyOrganize();
 
-        TicketType ticketType = TicketType.REGULAR;
+        TicketType ticketType = organize.ticket.ticketType; 
+
         double payment = Controller.calculatePayment(organize.artis, ticketType);
         totalRevenue += payment;
 
-        System.out.println("Total Revenue from Ticket Sales: " + totalRevenue);
+        System.out.println("Total Revenue : " + totalRevenue);
     }
 }

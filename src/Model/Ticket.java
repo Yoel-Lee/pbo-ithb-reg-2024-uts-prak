@@ -1,9 +1,9 @@
 package Model;
 
 public class Ticket {
-    TicketType ticketType;
-    double ticketPrice;
-    String ticketNumber;
+    public TicketType ticketType;
+   public  double ticketPrice;
+    public String ticketNumber;
 
     public Ticket(TicketType ticketType, double ticketPrice, String ticketNumber) {
         this.ticketType = ticketType;
